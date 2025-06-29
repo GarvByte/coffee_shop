@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-// import 'package:coffee_shop/pages/second_page.dart';
 import 'package:coffee_shop/pages/cart.dart';
 
 class ThirdPage extends StatefulWidget {
@@ -22,7 +21,7 @@ class _ThirdPageState extends State<ThirdPage> {
   void decrement() {
     setState(() {
       quantity == 0 ? null : quantity--;
-      // counter--;
+      
     });
   }
 
@@ -49,8 +48,6 @@ class _ThirdPageState extends State<ThirdPage> {
   @override
   Widget build(BuildContext context) {
     final coffeedata = ModalRoute.of(context)!.settings.arguments as Map;
-    print('Loading image: ${coffeedata['image']}');
-    print("selected index $selectedIndex");
 
     return Scaffold(
       backgroundColor: Colors.grey[300],
