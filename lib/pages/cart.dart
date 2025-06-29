@@ -4,4 +4,5 @@ class Cart {
   static List<int> cartItemsPrice = [];
   static List<int> cartItemsQuantity = [];
   static List<String> cartItemsImages = [];
+  static List<String> cartItemsPages = [];
 }
